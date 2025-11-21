@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Name - Web Developer</title>
+
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<!-- Custom Cursor -->
+<div class="custom-cursor"></div>
+<div class="cursor-follower"></div>
+<!-- Tooltip -->
+<div class="tooltip" id="tooltip"></div>
+<!-- Welcome Screen -->
+<div class="welcome-screen" id="welcomeScreen">
+<div class="welcome-text">Welcome to My Portfolio</div>
+<div class="welcome-subtitle">Crafting Digital Experiences</div>
+<div class="loading-bar">
+<div class="loading-progress"></div>
+</div>
+</div>
+<!-- Top Navigation -->
+<nav class="nav">
+<div class="logo" onclick="scrollToSection('home')">JKT</div>
+<div class="status-badge">
+<span class="status-dot"></span>
+            Available for Work
+        </div>
+<button class="theme-toggle" id="themeToggle">🌙</button>
+</nav>
+<!-- Floating Bottom Navigation -->
+<nav class="floating-nav" id="floatingNav">
+<a class="nav-item active" data-section="home" href="#home">
+<span class="nav-icon">🏠</span>
+<span class="nav-label">Home</span>
+</a>
+<a class="nav-item" data-section="about" href="#about">
+<span class="nav-icon">👤</span>
+<span class="nav-label">About</span>
+</a>
+<a class="nav-item" data-section="projects" href="#projects">
+<span class="nav-icon">💼</span>
+<span class="nav-label">Projects</span>
+</a>
+<a class="nav-item" data-section="skills" href="#skills">
+<span class="nav-icon">⚡</span>
+<span class="nav-label">Skills</span>
+</a>
+<a class="nav-item" data-section="contact" href="#contact">
+<span class="nav-icon">📧</span>
+<span class="nav-label">Contact</span>
+</a>
+</nav>
+<!-- Scroll to Top Button -->
+<div class="scroll-top" id="scrollTop">↑</div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+<!-- Animated Background Grid -->
+<div class="grid-background"></div>
+<!-- Glowing Orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<!-- Particles -->
+<div class="particles" id="particles"></div>
+<!-- Code Rain -->
+<div class="code-rain" id="codeRain"></div>
+<!-- Floating Icons -->
+<div class="floating-icon">⚛️</div>
+<div class="floating-icon">💻</div>
+<div class="floating-icon">🚀</div>
+<div class="floating-icon">⚡</div>
+<div class="hero-content">
+<h1>Hi, I'm John Kail J. Tausa</h1>
+<p class="hero-subtitle">Crafting Digital Experiences</p>
+<div class="typing-text" id="typingText"></div>
+<p class="hero-description">
+                I'm a passionate web developer specializing in building exceptional digital experiences.
+                Currently focused on building accessible, human-centered products.
+            </p>
+<div class="cta-group">
+<a class="cta-button" href="#projects">View My Work</a>
+<a class="cta-secondary" href="#contact">Get In Touch</a>
+</div>
+</div>
+<div class="scroll-indicator">
+<span>Scroll Down</span>
+<span class="arrow">↓</span>
+</div>
+</section>
+<!-- About Section -->
+<section class="section" id="about">
+<h2 class="section-title">About Me</h2>
+<div class="about-content">
+<div class="about-image">👨‍💻</div>
+<div class="about-text">
+<p>Hi! I'm a passionate web developer with a love for creating beautiful, functional, and user-friendly
+                    websites. I specialize in modern web technologies and enjoy bringing creative ideas to life through
+                    code.</p>
+<p>With experience in both front-end and back-end development, I strive to build complete digital
+                    solutions that make a difference. When I'm not coding, you can find me exploring new technologies
+                    and staying up-to-date with the latest web development trends.</p>
+<div class="stats-grid">
+<div class="stat-card">
+<span class="stat-number">3+</span>
+<span class="stat-label">Years Experience</span>
+</div>
+<div class="stat-card">
+<span class="stat-number">3+</span>
+<span class="stat-label">Projects Completed</span>
+</div>
+<div class="stat-card">
+<span class="stat-number">20+</span>
+<span class="stat-label">Happy Clients</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="section" id="projects">
+<h2 class="section-title">Featured Projects</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-image">
+                    🚀
+                    <div class="project-overlay">
+<div class="project-links">
+<a class="project-link" href="#" onclick="event.stopPropagation()">Live Demo</a>
+<a class="project-link" href="#" onclick="event.stopPropagation()">GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-content">
+<h3>🚀 Project One</h3>
+<p>Test.</p>
+<div class="project-tech">
+<span class="tech-tag">React</span>
+<span class="tech-tag">Node.js</span>
+<span class="tech-tag">MongoDB</span>
+</div>
+</div>
+</div>
+<div class="project-card">
+<div class="project-image">
+                    💼
+                    <div class="project-overlay">
+<div class="project-links">
+<a class="project-link" href="#" onclick="event.stopPropagation()">Live Demo</a>
+<a class="project-link" href="#" onclick="event.stopPropagation()">GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-content">
+<h3>💼 Ambulance Tracking System</h3>
+<p>Test.</p>
+<div class="project-tech">
+<span class="tech-tag">Vue.js</span>
+<span class="tech-tag">Firebase</span>
+<span class="tech-tag">Stripe</span>
+</div>
+</div>
+</div>
+<div class="project-card">
+<div class="project-image">
+                    🎨
+                    <div class="project-overlay">
+<div class="project-links">
+<a class="project-link" href="#" onclick="event.stopPropagation()">Live Demo</a>
+<a class="project-link" href="#" onclick="event.stopPropagation()">GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-content">
+<h3>🎨 Doctors Note v2</h3>
+<p>Test.</p>
+<div class="project-tech">
+<span class="tech-tag">HTML5</span>
+<span class="tech-tag">CSS3</span>
+<span class="tech-tag">JavaScript</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="section" id="skills">
+<h2 class="section-title">Skills &amp; Technologies</h2>
+<div class="skills-grid">
+<div class="skill-card" data-skill="95">
+<div class="skill-icon">⚛️</div>
+<h3>React</h3>
+<div class="skill-level">
+<div class="skill-progress" style="width: 0%"></div>
+</div>
+</div>
+<div class="skill-card" data-skill="90">
+<div class="skill-icon">📱</div>
+<h3>JavaScript</h3>
+<div class="skill-level">
+<div class="skill-progress" style="width: 0%"></div>
+</div>
+</div>
+<div class="skill-card" data-skill="85">
+<div class="skill-icon">🎨</div>
+<h3>CSS/SASS</h3>
+<div class="skill-level">
+<div class="skill-progress" style="width: 0%"></div>
+</div>
+</div>
+<div class="skill-card" data-skill="80">
+<div class="skill-icon">🟢</div>
+<h3>Node.js</h3>
+<div class="skill-level">
+<div class="skill-progress" style="width: 0%"></div>
+</div>
+</div>
+<div class="skill-card" data-skill="75">
+<div class="skill-icon">🗄️</div>
+<h3>MySql</h3>
+<div class="skill-level">
+<div class="skill-progress" style="width: 0%"></div>
+</div>
+</div>
+<div class="skill-card" data-skill="88">
+<div class="skill-icon">🔧</div>
+<h3>Git</h3>
+<div class="skill-level">
+<div class="skill-progress" style="width: 0%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="section" id="contact">
+<h2 class="section-title">Get In Touch</h2>
+<div class="contact-content">
+<p class="contact-intro">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                Feel free to reach out!
+            </p>
+<div class="contact-methods">
+<div class="contact-item">
+<div class="contact-icon">📧</div>
+<div class="contact-details">
+<div class="contact-label">Email</div>
+<div class="contact-value">
+<a>kaijoh26@gmail.com</a>
+</div>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📱</div>
+<div class="contact-details">
+<div class="contact-label">Phone</div>
+<div class="contact-value">
+<a>+63 9763724858</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="social-links">
+<a href="#" title="GitHub">💻</a>
+<a href="#" title="LinkedIn">👔</a>
+<a href="#" title="Twitter">🐦</a>
+<a href="#" title="Email">📧</a>
+</div>
+<p>© 2025 Your Name. All rights reserved.</p>
+</footer>
+
+<script defer="True" src="script.js"></script></body>
+</html>
